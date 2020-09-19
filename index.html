@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+
+    <!-- <link rel="stylesheet" href="../assets/css/reset.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <!-- Navbar w/ Highscores & Time Display -->
+
+        <nav class="navbar navbar-light bg-white">
+            <button class="btn " id="highscore-link">View Highscores</button>
+            <button class="btn navbar-text" id="time">Time: 0</button>
+        </nav>
+
+
+
+        <!-- StartBlock -->
+
+        <div class="container h-100" id="startScreen">
+            <div class=" row align-items-center h-100">
+                <div class="col-md-5 mx-auto text-center">
+                    <h1>Javascript Quiz</h1>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row align-items-center h-100">
+                <div class="col-md-6 mx-auto text-center">
+                    <p>
+                    Try to answer the following code related questions within the time limit. Keep in mind that
+                    incorrect answers will penalize your score ten seconds!
+                        <br><br>
+                    Good luck!
+                    </p>
+
+                    <button id="startButton" class="btn">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--QuestionBlock-->
+
+        <div class="row align-items-center h-100">
+            <div class="col-md-3 mx-auto hidden" id= "questionDiv">
+                <h1 id="question"></h1>
+                <div id= "answers">
+
+                    <button type="button" class="btn btn-answ btn-dark" id="answerOne"></button>
+                    <br>
+                    <button type="button" class="btn btn-answ btn-dark" id="answerTwo"></button>
+                    <br>
+                    <button type="button" class="btn btn-answ btn-dark" id="answerThree"></button>
+                    <br>
+                    <button type="button" class="btn btn-answ btn-dark" id="answerFour"></button>
+                
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+
+          
+        <!--ResultBlock-->
+
+        <div class="row align-items-center h-100">
+            <div class="col-md-5 mx-auto text-center hidden" id= "resultScreen">
+                <h1>All Done!</h1>
+                <br>
+                <h1>Congrats, your score is:
+                    <br>
+                 <span id="score"></span>
+                </h1>
+    
+                <form>
+                    <div class="form-group text-center">
+                        <label for="playerName">Please enter your name for our highscore table:</label>
+                        <input type="text" class="form-control" id="playerName" placeholder="Enter your name">
+                        <button id="submitBtn" class="btn">Submit and Start again</button>
+                    
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+  
+
+    
+    <script src="game.js"></script>
+
+</body>
+
+</html>

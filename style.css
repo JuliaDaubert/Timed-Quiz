@@ -1,0 +1,64 @@
+.btn{
+    background: darkmagenta; 
+    padding: 10px;
+    margin: 10px;
+    width: 30%; 
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: white!important;   
+    font-size: 1.em;
+    text-align: center;
+    
+}
+
+
+.btn-answ{
+width:100%!important;
+}
+
+#remainingTime {
+    color: white;
+}
+    
+#returnBtn{
+    background: darkmagenta; 
+    padding: 10px;
+    margin: 10px;
+    width: 30%; 
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: white;   
+    font-size: 1.em;
+    text-align: center;
+    
+}
+
+#clearHighscoreBtn{
+    background: darkmagenta; 
+    padding: 10px;
+    margin: 10px;
+    width: 30%; 
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: white;   
+    font-size: 1.em;
+    text-align: center;
+    
+
+}
+
+
+.navbar {
+    padding-bottom: 200px;
+
+}
+
+
+div.hidden {
+    display: none
+}
+
+#question {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
